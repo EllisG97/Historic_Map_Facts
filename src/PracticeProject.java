@@ -11,6 +11,15 @@ public class PracticeProject extends PApplet {
     public void setup() {
         size(800, 600);
         map = new UnfoldingMap(this, new Microsoft.AerialProvider());
+
+        
+        // Show map around the location in the given zoom level.
+        map.zoomAndPanTo(new Location(54.544540f, -1.927440f), 20);
+        
+        //Add Pan & Zoom Animations
+        map.setTweening(true);
+ 
+        // Add mouse and keyboard interactions
         MapUtils.createDefaultEventDispatcher(this, map);
     }
  
