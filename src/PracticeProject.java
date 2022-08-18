@@ -1,5 +1,7 @@
 import processing.core.PApplet;
+import de.fhpotsdam.unfolding.providers.Google;
 import de.fhpotsdam.unfolding.providers.Microsoft;
+import de.fhpotsdam.unfolding.providers.OpenStreetMap;
 
 import java.util.List;
 
@@ -12,11 +14,19 @@ import de.fhpotsdam.unfolding.utils.MapUtils;
 
 
 public class PracticeProject extends PApplet {
-    UnfoldingMap map;
+    UnfoldingMap map1;
+    UnfoldingMap map2;
+    UnfoldingMap map3;
+    UnfoldingMap currentMap;
     
     public void setup() {
         size(800, 600);
-        map = new UnfoldingMap(this, new Microsoft.AerialProvider());
+        map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
+        map2 = new UnfoldingMap(this, new OpenStreetMap.OpenStreetMapProvider());
+        map3 = new UnfoldingMap(this, new Google.GoogleTerrainProvider());
+        MapUtils.createDefaultEventDispatcher(this, map1, map2, map3);
+     
+        currentMap = map1;
 
         
         // Show map around the location in the given zoom level.
@@ -26,18 +36,32 @@ public class PracticeProject extends PApplet {
        //map.setTweening(true);
  
         // Add mouse and keyboard interactions
-        MapUtils.createDefaultEventDispatcher(this, map);
+        MapUtils.createDefaultEventDispatcher(this, currentMap);
         
-        List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
-        List<Marker> countryMarkers = MapUtils.createSimpleMarkers(countries);
-       map.addMarkers(countryMarkers);
+		/*
+		 * //Adding markers List<Feature> countries = GeoJSONReader.loadData(this,
+		 * "countries.geo.json"); List<Marker> countryMarkers =
+		 * MapUtils.createSimpleMarkers(countries); map1.addMarkers(countryMarkers);
+		 */
        
        
     }
  
     public void draw() {
-        map.draw();
+        currentMap.draw();
     }
+    
+    
+   public void keyPressed() {
+        if (key == '1') {
+            currentMap = map1;
+        } else if (key == '2') {
+            currentMap = map2;
+        } else if (key == '3') {
+            currentMap = map3;
+        }
+    
+   	}
 }
     
  
