@@ -19,6 +19,7 @@ import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.data.Feature;
 import de.fhpotsdam.unfolding.data.GeoJSONReader;
 import de.fhpotsdam.unfolding.data.GeoRSSReader;
+import de.fhpotsdam.unfolding.data.MarkerFactory;
 import de.fhpotsdam.unfolding.data.PointFeature;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.utils.MapPosition;
@@ -26,9 +27,6 @@ import de.fhpotsdam.unfolding.utils.MapUtils;
 
 public class PracticeProject extends PApplet {
 	UnfoldingMap map1;
-	/*
-	 * UnfoldingMap map2; UnfoldingMap map3; UnfoldingMap currentMap;
-	 */
 
 	List<Marker> countryMarkers;
 	HashMap<String, DataEntry> dataEntriesMap;
@@ -37,36 +35,41 @@ public class PracticeProject extends PApplet {
 		size(800, 600, OPENGL);
 		smooth();
 		// map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
-		map1 = new UnfoldingMap(this, new OpenStreetMap.OpenStreetMapProvider());
+		map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
+		map1.zoomToLevel(2);
+		map1.setBackgroundColor(240);
 		/*
 		 * map2 = new UnfoldingMap(this, new OpenStreetMap.OpenStreetMapProvider());
 		 * map3 = new UnfoldingMap(this, new Google.GoogleTerrainProvider());
 		 */
 		MapUtils.createDefaultEventDispatcher(this, map1);
 
-		// Add mouse and keyboard interactions
-		// MapUtils.createDefaultEventDispatcher(this, currentMap);
-		// List<Feature> features = GeoRSSReader.loadData(this,
-		// "data/bbc-georss-test.xml");
-		// List<Marker> markers = createLabeledMarkers(features);
-		// map1.addMarkers(markers);
-		MyPolygonMarker fMarker = new MyPolygonMarker();
-		fMarker.addLocations(getFranceShapeLocations());
-		MyPolygonMarker cMarker = new MyPolygonMarker();
-		cMarker.addLocations(getCorsicaShapeLocations());
-		MultiMarker multiMarker = new MultiMarker();
-		multiMarker.addMarkers(fMarker, cMarker);
-		//map1.addMarkers(multiMarker);
+		/*
+		 * List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
+		 * MarkerFactory markerFactory = new MarkerFactory();
+		 * markerFactory.setPointClass(MyPolygonMarker.class); List<Marker>
+		 * countryMarkers = markerFactory.createMarkers(countries); MyPolygonMarker
+		 * fMarker = new MyPolygonMarker();
+		 * fMarker.addLocations(getFranceShapeLocations()); MyPolygonMarker cMarker =
+		 * new MyPolygonMarker(); cMarker.addLocations(getCorsicaShapeLocations());
+		 * MultiMarker multiMarker = new MultiMarker(); multiMarker.addMarkers(fMarker,
+		 * cMarker); //map1.addMarkers(multiMarker);
+		 */		
+		List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
+		List<Marker> countryMarkers = MapUtils.createSimpleMarkers(countries);
+		for (Marker marker : countryMarkers) {
+			marker.setColor(color(255, 0, 0, 0));
+
+	}
+		map1.addMarkers(countryMarkers);
 		
-		 List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
-		 List<Marker> countryMarkers = MapUtils.createSimpleMarkers(countries);
-		 map1.addMarkers(countryMarkers);
+		//removeFill();
 		
 
 	}
 
 	public void draw() {
-		// currentMap.draw();
+		background(240);
 		map1.draw();
 	}
 
@@ -118,6 +121,8 @@ public class PracticeProject extends PApplet {
 		}
 
 	}
+	
+	
 
 	public static List<Location> getFranceShapeLocations() {
 		// Crude shape of France
