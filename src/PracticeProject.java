@@ -17,6 +17,7 @@ import java.util.List;
 
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.data.Feature;
+import de.fhpotsdam.unfolding.data.GeoJSONReader;
 import de.fhpotsdam.unfolding.data.GeoRSSReader;
 import de.fhpotsdam.unfolding.data.PointFeature;
 import de.fhpotsdam.unfolding.geo.Location;
@@ -55,20 +56,12 @@ public class PracticeProject extends PApplet {
 		cMarker.addLocations(getCorsicaShapeLocations());
 		MultiMarker multiMarker = new MultiMarker();
 		multiMarker.addMarkers(fMarker, cMarker);
+		//map1.addMarkers(multiMarker);
 		
-		 
-		/*
-		 * SimplePolygonMarker franceMarker = new
-		 * SimplePolygonMarker(getFranceShapeLocations()); SimplePolygonMarker
-		 * corsicaMarker = new SimplePolygonMarker(getCorsicaShapeLocations());
-		 * MultiMarker multiMarker = new MultiMarker();
-		 * multiMarker.addMarkers(franceMarker, corsicaMarker);
-		 */
-		 map1.addMarkers(multiMarker);
-		 
-		 
-		// polygonMarker.addLocations(getFranceShapeLocations());
-		// map1.addMarkers(polygonMarker);
+		 List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
+		 List<Marker> countryMarkers = MapUtils.createSimpleMarkers(countries);
+		 map1.addMarkers(countryMarkers);
+		
 
 	}
 
