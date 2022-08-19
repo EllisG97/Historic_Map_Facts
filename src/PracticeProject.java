@@ -1,5 +1,4 @@
 
-
 import processing.core.PApplet;
 import processing.core.PFont;
 import processing.core.PGraphics;
@@ -24,53 +23,63 @@ import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.utils.MapPosition;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 
-
 public class PracticeProject extends PApplet {
-    UnfoldingMap map1;
+	UnfoldingMap map1;
 	/*
 	 * UnfoldingMap map2; UnfoldingMap map3; UnfoldingMap currentMap;
 	 */
-    
-    
-    List<Marker> countryMarkers;
-    HashMap<String, DataEntry> dataEntriesMap;
-    
-    public void setup() {
-        size(800, 600, OPENGL);
-        smooth();
-        //map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
-        map1 = new UnfoldingMap(this, new OpenStreetMap.OpenStreetMapProvider());
+
+	List<Marker> countryMarkers;
+	HashMap<String, DataEntry> dataEntriesMap;
+
+	public void setup() {
+		size(800, 600, OPENGL);
+		smooth();
+		// map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
+		map1 = new UnfoldingMap(this, new OpenStreetMap.OpenStreetMapProvider());
 		/*
 		 * map2 = new UnfoldingMap(this, new OpenStreetMap.OpenStreetMapProvider());
 		 * map3 = new UnfoldingMap(this, new Google.GoogleTerrainProvider());
 		 */
-        MapUtils.createDefaultEventDispatcher(this, map1);
-        
-        // Add mouse and keyboard interactions
-        //MapUtils.createDefaultEventDispatcher(this, currentMap); 
-		//List<Feature> features = GeoRSSReader.loadData(this, "data/bbc-georss-test.xml");
-		//List<Marker> markers = createLabeledMarkers(features);
-		//map1.addMarkers(markers);
-		
+		MapUtils.createDefaultEventDispatcher(this, map1);
 
-		SimplePolygonMarker franceMarker = new SimplePolygonMarker(getFranceShapeLocations());
-		SimplePolygonMarker corsicaMarker = new SimplePolygonMarker(getCorsicaShapeLocations());
+		// Add mouse and keyboard interactions
+		// MapUtils.createDefaultEventDispatcher(this, currentMap);
+		// List<Feature> features = GeoRSSReader.loadData(this,
+		// "data/bbc-georss-test.xml");
+		// List<Marker> markers = createLabeledMarkers(features);
+		// map1.addMarkers(markers);
+		MyPolygonMarker fMarker = new MyPolygonMarker();
+		fMarker.addLocations(getFranceShapeLocations());
+		MyPolygonMarker cMarker = new MyPolygonMarker();
+		cMarker.addLocations(getCorsicaShapeLocations());
 		MultiMarker multiMarker = new MultiMarker();
-		multiMarker.addMarkers(franceMarker, corsicaMarker);
-		map1.addMarkers(multiMarker);
-       
-    }
- 
-    public void draw() {
-       // currentMap.draw();
-    	map1.draw();
-    }
-    
-    
-   	
-   
-    public void mouseMoved() {
-		// Not via marker.isInside(...) as this example supports both MultiMarker and two markers.
+		multiMarker.addMarkers(fMarker, cMarker);
+		
+		 
+		/*
+		 * SimplePolygonMarker franceMarker = new
+		 * SimplePolygonMarker(getFranceShapeLocations()); SimplePolygonMarker
+		 * corsicaMarker = new SimplePolygonMarker(getCorsicaShapeLocations());
+		 * MultiMarker multiMarker = new MultiMarker();
+		 * multiMarker.addMarkers(franceMarker, corsicaMarker);
+		 */
+		 map1.addMarkers(multiMarker);
+		 
+		 
+		// polygonMarker.addLocations(getFranceShapeLocations());
+		// map1.addMarkers(polygonMarker);
+
+	}
+
+	public void draw() {
+		// currentMap.draw();
+		map1.draw();
+	}
+
+	public void mouseMoved() {
+		// Not via marker.isInside(...) as this example supports both MultiMarker and
+		// two markers.
 		// multiMarker.isInside(map, mouseX, mouseY);
 
 		Marker hitMarker = map1.getDefaultMarkerManager().getFirstHitMarker(mouseX, mouseY);
@@ -82,19 +91,19 @@ public class PracticeProject extends PApplet {
 			}
 		}
 	}
-   
-   public List<Marker> createLabeledMarkers(List<Feature> features) {
-       PFont font = loadFont("ui/OpenSans-12.vlw");
-       List<Marker> markers = new ArrayList<Marker>();
-       for (Feature feature : features) {
-           String label = feature.getStringProperty("replacedle");
-           PointFeature pointFeature = (PointFeature) feature;
-           Marker marker = new LabeledMarker(pointFeature.getLocation(), label, font, 15);
-           markers.add(marker);
-       }
-       return markers;
-   }
-   
+
+	public List<Marker> createLabeledMarkers(List<Feature> features) {
+		PFont font = loadFont("ui/OpenSans-12.vlw");
+		List<Marker> markers = new ArrayList<Marker>();
+		for (Feature feature : features) {
+			String label = feature.getStringProperty("replacedle");
+			PointFeature pointFeature = (PointFeature) feature;
+			Marker marker = new LabeledMarker(pointFeature.getLocation(), label, font, 15);
+			markers.add(marker);
+		}
+		return markers;
+	}
+
 // Very simple custom PolygonMarker. Extends Unfolding's SimplePolygonMarker to create own drawing methods.
 	class MyPolygonMarker extends SimplePolygonMarker {
 
@@ -103,9 +112,10 @@ public class PracticeProject extends PApplet {
 
 			// Here you should do your custom drawing
 			pg.strokeWeight(2);
-			pg.stroke(255, 255, 0);
-			pg.fill(255, 0, 0, 127);
+			pg.stroke(0, 0, 0);
+			pg.noFill();
 			pg.beginShape();
+
 			for (MapPosition mapPosition : mapPositions) {
 				pg.vertex(mapPosition.x, mapPosition.y);
 			}
@@ -115,8 +125,7 @@ public class PracticeProject extends PApplet {
 		}
 
 	}
-	
-	
+
 	public static List<Location> getFranceShapeLocations() {
 		// Crude shape of France
 		List<Location> franceLocations = new ArrayList<Location>();
@@ -144,9 +153,4 @@ public class PracticeProject extends PApplet {
 		return corsicaLocations;
 	}
 
-   
-   
 }
-    
- 
-
