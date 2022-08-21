@@ -54,7 +54,7 @@ public class PracticeProject extends PApplet {
 
 		List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
 		MarkerFactory markerFactory = new MarkerFactory();
-		markerFactory.setPolygonClass(CentroidLabelMarker.class);
+		markerFactory.setPolygonClass(LabeledMarker.class);
 		List<Marker> countryMarkers = markerFactory.createMarkers(countries);
 
 		map1.addMarkers(countryMarkers);

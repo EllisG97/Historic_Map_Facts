@@ -40,7 +40,7 @@ public class LabeledMarker extends SimplePolygonMarker {
 
 			// Draws label
 			pg.noFill();
-			pg.text(getId(), x, y);
+			//pg.text(getId(), x, y);
 			pg.popStyle();
 		}
 	}
