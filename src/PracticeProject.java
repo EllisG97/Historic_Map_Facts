@@ -78,17 +78,15 @@ public class PracticeProject extends PApplet {
 	}
 
 	public void mouseMoved() {
-		// Not via marker.isInside(...) as this example supports both MultiMarker and
-		// two markers.
-		// multiMarker.isInside(map, mouseX, mouseY);
+		// Deselect all marker
+		for (Marker marker : map1.getMarkers()) {
+			marker.setSelected(false);
+		}
 
-		Marker hitMarker = map1.getDefaultMarkerManager().getFirstHitMarker(mouseX, mouseY);
-		if (hitMarker != null) {
-			hitMarker.setSelected(true);
-		} else {
-			for (Marker marker : map1.getDefaultMarkerManager().getMarkers()) {
-				marker.setSelected(false);
-			}
+		// Select hit marker
+		Marker marker = map1.getFirstHitMarker(mouseX, mouseY);
+		if (marker != null) {
+			marker.setSelected(true);
 		}
 	}
 
