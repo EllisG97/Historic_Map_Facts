@@ -1,75 +1,47 @@
 
 
-import processing.core.PFont;
+import java.util.HashMap;
+import java.util.List;
+
 import processing.core.PGraphics;
+import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.geo.Location;
-import de.fhpotsdam.unfolding.marker.SimplePointMarker;
+import de.fhpotsdam.unfolding.marker.SimplePolygonMarker;
+import de.fhpotsdam.unfolding.utils.MapPosition;
 
 /**
- * A point marker which can show a label containing the marker's name.
+ * Displays the polygon ID as label at the geometric center of its shape. For this, it uses the geo-spatial centroid of
+ * the polygon, and converts it to object coordinates, to be consistent to other marker draw methods.
  */
-public class LabeledMarker extends SimplePointMarker {
+public class LabeledMarker extends SimplePolygonMarker {
 
-	protected String name;
-	protected float size = 15;
-	protected int space = 6;
-
-	private PFont font;
-	private float fontSize = 12;
-
-	public LabeledMarker(Location location) {
-		this.location = location;
+	public LabeledMarker(List<Location> locations) {
+		super(locations);
 	}
 
-	public LabeledMarker(Location location, String name, PFont font, float size) {
-		this(location);
-		this.name = name;
-		this.size = size;
+	// Overrides the method with map, as we need to convert the centroid location ourself.
+	@Override
+	protected void draw(PGraphics pg, List<MapPosition> mapPositions, HashMap<String, Object> properties,
+			UnfoldingMap map) {
 
-		this.font = font;
-		if (font != null) {
-			this.fontSize = font.getSize();
+		// Polygon shape is drawn by the SimplePolygonMarker
+		super.draw(pg, mapPositions, properties, map);
+
+		// Draws the country code at the centroid of the polygon
+		if (getId() != null) {
+			pg.pushStyle();
+
+			// Gets geometric center as geo-location
+			Location centerLocation = getCentroid();
+			// Converts geo-location to position on the map (NB: Not the screen!)
+			float[] xy = map.mapDisplay.getObjectFromLocation(centerLocation);
+			int x = Math.round(xy[0] - pg.textWidth(getId()) / 2);
+			int y = Math.round(xy[1] + 6);
+
+			// Draws label
+			pg.noFill();
+			pg.text(getId(), x, y);
+			pg.popStyle();
 		}
 	}
-
-	/**
-	 * Displays this marker's name in a box.
-	 */
-	public void draw(PGraphics pg, float x, float y) {
-		pg.pushStyle();
-		pg.pushMatrix();
-		if (selected) {
-			pg.translate(0, 0, 1);
-		}
-		pg.strokeWeight(strokeWeight);
-		if (selected) {
-			pg.fill(highlightColor);
-			pg.stroke(highlightStrokeColor);
-		} else {
-			pg.fill(color);
-			pg.stroke(strokeColor);
-		}
-		pg.ellipse(x, y, size, size);// TODO use radius in km and convert to px
-
-		// label
-		if (selected && name != null) {
-			if (font != null) {
-				pg.textFont(font);
-			}
-			pg.fill(highlightColor);
-			pg.stroke(highlightStrokeColor);
-			pg.rect(x + strokeWeight / 2, y - fontSize + strokeWeight / 2 - space, pg.textWidth(name) + space * 1.5f,
-					fontSize + space);
-			pg.fill(255, 255, 255);
-			pg.text(name, Math.round(x + space * 0.75f + strokeWeight / 2),
-					Math.round(y + strokeWeight / 2 - space * 0.75f));
-		}
-		pg.popMatrix();
-		pg.popStyle();
-	}
-
-	public String getName() {
-		return name;
-	}
-
 }
