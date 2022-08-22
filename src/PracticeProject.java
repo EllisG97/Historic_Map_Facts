@@ -7,17 +7,24 @@ import de.fhpotsdam.unfolding.providers.Microsoft;
 import de.fhpotsdam.unfolding.providers.OpenStreetMap;
 import de.fhpotsdam.unfolding.examples.data.countrydata.CountryBubbleMapApp.DataEntry;
 import de.fhpotsdam.unfolding.examples.marker.advanced.centroid.CentroidLabelMarker;
+import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.Marker;
 import de.fhpotsdam.unfolding.events.EventDispatcher;
 
+
 import java.awt.Color;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.data.Feature;
 import de.fhpotsdam.unfolding.data.GeoJSONReader;
+import de.fhpotsdam.unfolding.data.GeoRSSReader;
 import de.fhpotsdam.unfolding.data.MarkerFactory;
+import de.fhpotsdam.unfolding.data.PointFeature;
+import de.fhpotsdam.unfolding.data.ShapeFeature;
+import de.fhpotsdam.unfolding.utils.GeoUtils;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 import de.fhpotsdam.unfolding.utils.ScreenPosition;
 
@@ -53,9 +60,12 @@ public class PracticeProject extends PApplet {
 
 
 		List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
+
 		MarkerFactory markerFactory = new MarkerFactory();
-		markerFactory.setPolygonClass(LabeledMarker.class);
+		markerFactory.setPolygonClass(CustomPolygonMarker.class);
+		//List<Marker> markers = createLabeledMarkers(countries);
 		List<Marker> countryMarkers = markerFactory.createMarkers(countries);
+
 
 		map1.addMarkers(countryMarkers);
 		for (Marker marker : countryMarkers) {
@@ -63,6 +73,7 @@ public class PracticeProject extends PApplet {
 
 	}
 		map1.addMarkers(countryMarkers);
+		//map1.addMarkers(markers);
 		setBackground(Color.BLACK);
 		background(color(181, 101, 29)); 
 
@@ -82,7 +93,6 @@ public class PracticeProject extends PApplet {
 		for (Marker marker : map1.getMarkers()) {
 			marker.setSelected(false);
 		}
-
 		// Select hit marker
 		Marker marker = map1.getFirstHitMarker(mouseX, mouseY);
 		if (marker != null) {
@@ -90,12 +100,37 @@ public class PracticeProject extends PApplet {
 		}
 	}
 
+	public void mouseClicked() {
+		Marker marker = map1.getFirstHitMarker(mouseX, mouseY);
+		if (marker != null) {
+			map1.zoomAndPanToFit(GeoUtils.getLocations(marker));
+			
+		} else {
+			map1.zoomAndPanTo(2, new Location(0, 0));
+		}
+	}
+	
+	
+	
 	public void drawDetailSelectionBox(ScreenPosition tl, ScreenPosition br) {
 		noFill();
 		stroke(251, 114, 0, 240);
 		float w = br.x - tl.x;
 		float h = br.y - tl.y;
 		rect(tl.x, tl.y, w, h);
+	}
+	
+	
+	public List<Marker> createLabeledMarkers(List<Feature> countries) {
+		PFont font = loadFont("ui/OpenSans-12.vlw");
+		List<Marker> markers = new ArrayList<Marker>();
+		for (Feature feature : countries) {
+			String label = feature.getStringProperty("name");
+			ShapeFeature pointFeature = (ShapeFeature) feature;
+			Marker marker = new CustomLabeledPolygonMarker(pointFeature.getLocations(), label, font, 15);
+			markers.add(marker);
+		}
+		return markers;
 	}
 
 }
