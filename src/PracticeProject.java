@@ -80,7 +80,7 @@ public class PracticeProject extends PApplet {
 	}
 
 	public void draw() {
-		background(240);
+		background(0);
 		map1.draw();
 		mapOverview.draw();
 		ScreenPosition tl1 = mapOverview.getScreenPosition(map1.getTopLeftBorder());
@@ -91,19 +91,23 @@ public class PracticeProject extends PApplet {
 	public void mouseMoved() {
 		// Deselect all marker
 		for (Marker marker : map1.getMarkers()) {
-			marker.setSelected(false);
+			//marker.setSelected(false);
 		}
 		// Select hit marker
 		Marker marker = map1.getFirstHitMarker(mouseX, mouseY);
 		if (marker != null) {
-			marker.setSelected(true);
+			//marker.setSelected(true);
 		}
 	}
 
 	public void mouseClicked() {
 		Marker marker = map1.getFirstHitMarker(mouseX, mouseY);
 		if (marker != null) {
-			map1.zoomAndPanToFit(GeoUtils.getLocations(marker));
+			//map1.zoomAndPanToFit(GeoUtils.getLocations(marker));
+			for (Marker m : map1.getMarkers()) {
+				m.setSelected(false);
+			}
+			marker.setSelected(true);
 			
 		} else {
 			map1.zoomAndPanTo(2, new Location(0, 0));
