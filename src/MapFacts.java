@@ -24,21 +24,27 @@ import de.fhpotsdam.unfolding.data.GeoRSSReader;
 import de.fhpotsdam.unfolding.data.MarkerFactory;
 import de.fhpotsdam.unfolding.data.PointFeature;
 import de.fhpotsdam.unfolding.data.ShapeFeature;
+import de.fhpotsdam.unfolding.utils.DebugDisplay;
 import de.fhpotsdam.unfolding.utils.GeoUtils;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 import de.fhpotsdam.unfolding.utils.ScreenPosition;
 
-public class PracticeProject extends PApplet {
+public class MapFacts extends PApplet {
 	UnfoldingMap map1;
 	UnfoldingMap mapOverviewStatic;
 	UnfoldingMap mapOverview;
+	DebugDisplay debugDisplay;
 
 	List<Marker> countryMarkers;
 	HashMap<String, DataEntry> dataEntriesMap;
+	
+	PFont font;
 
 	public void setup() {
 		size(1280, 960, OPENGL);
 		smooth();
+		font = createFont("sans-serif", 14);
+		
 		// map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
 		map1 = new UnfoldingMap(this, 10, 10, 1025, 1020, new Microsoft.AerialProvider());
 		map1.zoomToLevel(3);
@@ -76,6 +82,9 @@ public class PracticeProject extends PApplet {
 		//map1.addMarkers(markers);
 		setBackground(Color.BLACK);
 		background(color(181, 101, 29)); 
+		
+		
+		debugDisplay = new DebugDisplay(this, map1);
 
 	}
 
@@ -83,9 +92,17 @@ public class PracticeProject extends PApplet {
 		background(0);
 		map1.draw();
 		mapOverview.draw();
+		
 		ScreenPosition tl1 = mapOverview.getScreenPosition(map1.getTopLeftBorder());
 		ScreenPosition br1 = mapOverview.getScreenPosition(map1.getBottomRightBorder());
 		drawDetailSelectionBox(tl1, br1);
+		
+		drawButtons();
+		debugDisplay.draw();
+	}
+	
+	public void drwa() {
+		
 	}
 
 	public void mouseMoved() {
@@ -135,6 +152,23 @@ public class PracticeProject extends PApplet {
 			markers.add(marker);
 		}
 		return markers;
+	}
+	
+	
+	public void drawButtons() {
+		textFont(font);
+		textSize(14);
+			
+
+		// Simple Berlin button
+		fill(127);
+		stroke(200);
+		strokeWeight(2);
+		rect(1080, 400, 180, 80);
+		fill(0);
+		text("Fact", 1120, 442);
+
+
 	}
 
 }
