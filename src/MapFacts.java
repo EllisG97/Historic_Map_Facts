@@ -41,12 +41,12 @@ public class MapFacts extends PApplet {
 	PFont font;
 
 	public void setup() {
-		size(1280, 960, OPENGL);
+		size(1400, 865, OPENGL);
 		smooth();
 		font = createFont("sans-serif", 14);
 		
 		// map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
-		map1 = new UnfoldingMap(this, 10, 10, 1025, 1020, new Microsoft.AerialProvider());
+		map1 = new UnfoldingMap(this, 10, 10, 950, 850, new Microsoft.AerialProvider());
 		map1.zoomToLevel(3);
 		map1.setZoomRange(3, 10);
 		map1.setTweening(true);
@@ -161,10 +161,10 @@ public class MapFacts extends PApplet {
 			
 
 		// Simple Berlin button
-		fill(127);
+		noFill();
 		stroke(200);
-		strokeWeight(2);
-		rect(1080, 400, 180, 80);
+		strokeWeight(1);
+		rect(1000, 250, 350, 600);
 		fill(0);
 		text("Fact", 1120, 442);
 
