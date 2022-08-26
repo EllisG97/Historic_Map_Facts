@@ -97,13 +97,10 @@ public class MapFacts extends PApplet {
 		ScreenPosition br1 = mapOverview.getScreenPosition(map1.getBottomRightBorder());
 		drawDetailSelectionBox(tl1, br1);
 		
-		drawButtons();
+		createFactBox();
 		debugDisplay.draw();
 	}
 	
-	public void drwa() {
-		
-	}
 
 	public void mouseMoved() {
 		// Deselect all marker
@@ -155,9 +152,10 @@ public class MapFacts extends PApplet {
 	}
 	
 	
-	public void drawButtons() {
+	public void createFactBox() {
 		textFont(font);
-		textSize(14);
+		textSize(20);
+		
 			
 
 		// Simple Berlin button
@@ -165,8 +163,10 @@ public class MapFacts extends PApplet {
 		stroke(200);
 		strokeWeight(1);
 		rect(1000, 250, 350, 600);
-		fill(0);
-		text("Fact", 1120, 442);
+		text("Country: " + " Estonia", 1010, 285);
+		text("Population: " + " 1,131,796", 1010, 310);
+		text("Capital: " + " Tallinn", 1010, 335);
+		text("Did You Know: " + " Lorem Ipsum", 1010, 400);
 
 
 	}
