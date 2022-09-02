@@ -153,6 +153,7 @@ public class MapFacts extends PApplet {
 	
 	
 	public void createFactBox() {
+
 		textFont(font);
 		textSize(20);
 		
