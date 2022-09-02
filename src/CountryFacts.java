@@ -20,7 +20,7 @@ public class CountryFacts extends SimplePolygonMarker {
 		super(locations);
 	}
 	
-	protected void draw(PGraphics pg, List<MapPosition> mapPositions, HashMap<String, Object> properties,
+	protected void draw(PGraphics pg, HashMap<String, Object> properties,
 			UnfoldingMap map) {
 
 			if (getId() != null && selected) {
