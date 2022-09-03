@@ -96,9 +96,12 @@ public class MapFacts extends PApplet {
 		ScreenPosition tl1 = mapOverview.getScreenPosition(map1.getTopLeftBorder());
 		ScreenPosition br1 = mapOverview.getScreenPosition(map1.getBottomRightBorder());
 		drawDetailSelectionBox(tl1, br1);
-		//CountryFacts countryFacts = new CountryFacts();
-		//countryFacts.draw(g, null, map1);
-		createFactBox();
+		
+		List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
+		
+		CountryFacts countryFacts = new CountryFacts();
+		countryFacts.draw(countries);
+		//createFactBox();
 		debugDisplay.draw();
 	}
 	

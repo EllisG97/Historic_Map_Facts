@@ -7,6 +7,7 @@ import processing.core.PGraphics;
 import processing.core.PApplet;
 
 import de.fhpotsdam.unfolding.UnfoldingMap;
+import de.fhpotsdam.unfolding.data.Feature;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.SimplePolygonMarker;
 import de.fhpotsdam.unfolding.utils.MapPosition;
@@ -15,15 +16,13 @@ import de.fhpotsdam.unfolding.utils.MapPosition;
 
 public class CountryFacts extends SimplePolygonMarker {
 	
-	
-	public CountryFacts(List<Location> locations) {
-		super(locations);
-	}
-	
-	protected void draw(PGraphics pg, HashMap<String, Object> properties,
-			UnfoldingMap map) {
+	protected void draw(List<Feature> countries) {
+		
+		
+		PGraphics pg = new PGraphics();
 
 			if (getId() != null && selected) {
+				
 				pg.pushStyle();
 
 				
