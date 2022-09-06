@@ -16,20 +16,20 @@ import de.fhpotsdam.unfolding.utils.MapPosition;
 
 public class CountryFacts extends SimplePolygonMarker {
 	
-	protected void draw(List<Feature> countries) {
-		
-		
-		PGraphics pg = new PGraphics();
+	public void draw(List<Feature> countries) {
 
+		PGraphics pg = new PGraphics();
+		
+		pg.noFill();
+		pg.stroke(200);
+		pg.strokeWeight(1);
+		pg.rect(1000, 250, 350, 600);
 			if (getId() != null && selected) {
 				
 				pg.pushStyle();
 
 				
-				pg.noFill();
-				pg.stroke(200);
-				pg.strokeWeight(1);
-				pg.rect(1000, 250, 350, 600);
+		
 				
 				String country = getStringProperty("name");
 				//String population = getStringProperty("population");
