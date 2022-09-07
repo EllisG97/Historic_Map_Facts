@@ -24,12 +24,11 @@ public class CountryFacts extends SimplePolygonMarker {
 		pg.stroke(200);
 		pg.strokeWeight(1);
 		pg.rect(1000, 250, 350, 600);
+		
+		
 			if (getId() != null && selected) {
 				
 				pg.pushStyle();
-
-				
-		
 				
 				String country = getStringProperty("name");
 				//String population = getStringProperty("population");

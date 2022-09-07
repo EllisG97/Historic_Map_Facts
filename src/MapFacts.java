@@ -101,7 +101,7 @@ public class MapFacts extends PApplet {
 		
 		CountryFacts countryFacts = new CountryFacts();
 		countryFacts.draw(countries);
-		//createFactBox();
+		//createFactBox(countries);
 		debugDisplay.draw();
 	}
 	
@@ -156,7 +156,7 @@ public class MapFacts extends PApplet {
 	}
 	
 	
-	public void createFactBox() {
+	public void createFactBox(List<Feature> countries) {
 
 		textFont(font);
 		textSize(20);
