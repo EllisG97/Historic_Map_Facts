@@ -2,11 +2,9 @@
 import processing.core.PApplet;
 import processing.core.PFont;
 import processing.core.PGraphics;
-import de.fhpotsdam.unfolding.providers.Google;
+import processing.data.JSONObject;
 import de.fhpotsdam.unfolding.providers.Microsoft;
-import de.fhpotsdam.unfolding.providers.OpenStreetMap;
 import de.fhpotsdam.unfolding.examples.data.countrydata.CountryBubbleMapApp.DataEntry;
-import de.fhpotsdam.unfolding.examples.marker.advanced.centroid.CentroidLabelMarker;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.Marker;
 import de.fhpotsdam.unfolding.events.EventDispatcher;
@@ -25,6 +23,7 @@ import de.fhpotsdam.unfolding.data.MarkerFactory;
 import de.fhpotsdam.unfolding.data.PointFeature;
 import de.fhpotsdam.unfolding.data.ShapeFeature;
 import de.fhpotsdam.unfolding.utils.DebugDisplay;
+import de.fhpotsdam.unfolding.marker.AbstractMarker;
 import de.fhpotsdam.unfolding.utils.GeoUtils;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 import de.fhpotsdam.unfolding.utils.ScreenPosition;
@@ -45,8 +44,9 @@ public class MapFacts extends PApplet {
 		smooth();
 		font = createFont("sans-serif", 14);
 		
+		
 		// map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
-		map1 = new UnfoldingMap(this, 10, 10, 950, 850, new Microsoft.AerialProvider());
+		map1 = new UnfoldingMap(this,  10, 10, 950, 850, new Microsoft.AerialProvider());
 		map1.zoomToLevel(3);
 		map1.setZoomRange(3, 10);
 		map1.setTweening(true);
@@ -84,6 +84,8 @@ public class MapFacts extends PApplet {
 		background(color(181, 101, 29)); 
 		
 		
+		
+		
 		debugDisplay = new DebugDisplay(this, map1);
 
 	}
@@ -92,16 +94,16 @@ public class MapFacts extends PApplet {
 		background(0);
 		map1.draw();
 		mapOverview.draw();
-		
-		ScreenPosition tl1 = mapOverview.getScreenPosition(map1.getTopLeftBorder());
-		ScreenPosition br1 = mapOverview.getScreenPosition(map1.getBottomRightBorder());
-		drawDetailSelectionBox(tl1, br1);
-		
 		List<Feature> countries = GeoJSONReader.loadData(this, "countries.geo.json");
 		
 		CountryFacts countryFacts = new CountryFacts();
 		countryFacts.draw(countries);
-		//createFactBox(countries);
+		
+		ScreenPosition tl1 = mapOverview.getScreenPosition(map1.getTopLeftBorder());
+		ScreenPosition br1 = mapOverview.getScreenPosition(map1.getBottomRightBorder());
+		drawDetailSelectionBox(tl1, br1);
+
+		createFactBox(countries);
 		debugDisplay.draw();
 	}
 	
@@ -160,15 +162,15 @@ public class MapFacts extends PApplet {
 
 		textFont(font);
 		textSize(20);
-		
-			
+
+		//String country = getStringProperty("name");
 
 		// Simple Berlin button
 		noFill();
 		stroke(200);
 		strokeWeight(1);
 		rect(1000, 250, 350, 600);
-		text("Country: " + " Estonia", 1010, 285);
+		//text("Country: " + " Estonia", 1010, 285);
 		text("Population: " + " 1,131,796", 1010, 310);
 		text("Capital: " + " Tallinn", 1010, 335);
 		text("Did You Know: " + " Lorem Ipsum", 1010, 400);

@@ -1,5 +1,4 @@
 
-import java.util.Arrays;
 
 public class CountryJson {
 
@@ -51,13 +50,12 @@ public class CountryJson {
 	@Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
-		sb.append("***** Employee Details *****\n");
 		sb.append("ID="+getId()+"\n");
 		sb.append("Name="+getName()+"\n");
 		sb.append("Population="+getPopulation()+"\n");
 		sb.append("Capital="+getCapital()+"\n");
 		sb.append("Fact="+getFact());
-		sb.append("\n*****************************");
+
 		
 		return sb.toString();
 	}

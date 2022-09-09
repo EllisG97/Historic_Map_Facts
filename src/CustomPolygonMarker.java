@@ -3,6 +3,7 @@ import java.util.List;
 
 import processing.core.PFont;
 import processing.core.PGraphics;
+import processing.core.PApplet;
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.SimplePolygonMarker;
@@ -14,6 +15,8 @@ import de.fhpotsdam.unfolding.utils.MapPosition;
  */
 public class CustomPolygonMarker extends SimplePolygonMarker {
 	
+	PFont font;
+	PApplet app;
 
 	public CustomPolygonMarker(List<Location> locations) {
 		super(locations);
@@ -27,6 +30,10 @@ public class CustomPolygonMarker extends SimplePolygonMarker {
 
 		// Polygon shape is drawn by the SimplePolygonMarker
 		super.draw(pg, mapPositions, properties, map);
+		/*
+		 * font = app.createFont("sans-serif", 14); app.textFont(font);
+		 * app.textSize(20);
+		 */
 		//setHidden(true);
 		// Draws the country code at the centroid of the polygon 
 		if (getId() != null && selected) {
@@ -42,8 +49,16 @@ public class CustomPolygonMarker extends SimplePolygonMarker {
 			// Draws label
 			pg.noFill();
 			pg.text(getStringProperty("name"), x, y);
+			pg.text("Country: " + getStringProperty("name") , 1010, 285);
 			pg.popStyle();
 		}
+	}
+	
+	protected String countryName() {
+		if (getId() != null && selected) {
+			return getStringProperty("name");
+		}
+		return "N/A";
 	}
 	
 }

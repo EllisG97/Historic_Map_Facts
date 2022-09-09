@@ -16,9 +16,18 @@ import de.fhpotsdam.unfolding.utils.MapPosition;
 
 public class CountryFacts extends SimplePolygonMarker {
 	
+	
+	PFont font;
+	
+
 	public void draw(List<Feature> countries) {
 
 		PGraphics pg = new PGraphics();
+//		PFont fonts = new PFont();
+//
+//		fonts.getNative();
+//		fonts.getSize();
+		
 		
 		pg.noFill();
 		pg.stroke(200);
@@ -31,6 +40,7 @@ public class CountryFacts extends SimplePolygonMarker {
 				pg.pushStyle();
 				
 				String country = getStringProperty("name");
+				System.out.println(country);
 				//String population = getStringProperty("population");
 				//String capital = getStringProperty("capital");
 				//String fact = getStringProperty("fact");
