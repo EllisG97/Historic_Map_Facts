@@ -160,20 +160,20 @@ public class MapFacts extends PApplet {
 	
 	public void createFactBox(List<Feature> countries) {
 
-		textFont(font);
-		textSize(20);
-		
-		
-		//String country = CustomPolygonMarker.countryName();
-
-		// Simple Berlin button
+		pushStyle();
+		rect(1000, 250, 350, 600, 28);
 		stroke(200);
 		strokeWeight(1);
-		rect(1000, 250, 350, 600);
+		popStyle();
+			
+		pushStyle();	
+		textFont(font);
+		textSize(20);
 		text("Country: ", 1010, 285);
 		text("Population: " + " 1,131,796", 1010, 310);
 		text("Capital: " + " Tallinn", 1010, 335);
 		text("Did You Know: " + " Lorem Ipsum", 1010, 400);
+		popStyle();
 
 
 	}
