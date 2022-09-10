@@ -5,6 +5,7 @@ import processing.core.PFont;
 import processing.core.PGraphics;
 import processing.core.PApplet;
 import de.fhpotsdam.unfolding.UnfoldingMap;
+import de.fhpotsdam.unfolding.data.Feature;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.SimplePolygonMarker;
 import de.fhpotsdam.unfolding.utils.MapPosition;
@@ -30,31 +31,30 @@ public class CustomPolygonMarker extends SimplePolygonMarker {
 
 		// Polygon shape is drawn by the SimplePolygonMarker
 		super.draw(pg, mapPositions, properties, map);
-		/*
-		 * font = app.createFont("sans-serif", 14); app.textFont(font);
-		 * app.textSize(20);
-		 */
-		//setHidden(true);
+
 		// Draws the country code at the centroid of the polygon 
 		if (getId() != null && selected) {
 			pg.pushStyle();
-
 			// Gets geometric center as geo-location
 			Location centerLocation = getCentroid();
 			// Converts geo-location to position on the map (NB: Not the screen!)
 			float[] xy = map.mapDisplay.getObjectFromLocation(centerLocation);
 			int x = Math.round(xy[0] - pg.textWidth(getId()) / 2);
 			int y = Math.round(xy[1] + 6);
-
 			// Draws label
 			pg.noFill();
 			pg.text(getStringProperty("name"), x, y);
-			pg.text("Country: " + getStringProperty("name") , 1010, 285);
+			pg.popStyle();
+			
+			
+			pg.pushStyle();
+			pg.textSize(20);
+			pg.text(getStringProperty("name") , 1075, 275);
 			pg.popStyle();
 		}
 	}
 	
-	protected String countryName() {
+	protected  String countryName() {
 		if (getId() != null && selected) {
 			return getStringProperty("name");
 		}

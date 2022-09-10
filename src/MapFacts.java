@@ -46,7 +46,7 @@ public class MapFacts extends PApplet {
 		
 		
 		// map1 = new UnfoldingMap(this, new Microsoft.AerialProvider());
-		map1 = new UnfoldingMap(this,  10, 10, 950, 850, new Microsoft.AerialProvider());
+		map1 = new UnfoldingMap(this,  10, 10, 1350, 850, new Microsoft.AerialProvider());
 		map1.zoomToLevel(3);
 		map1.setZoomRange(3, 10);
 		map1.setTweening(true);
@@ -162,15 +162,15 @@ public class MapFacts extends PApplet {
 
 		textFont(font);
 		textSize(20);
-
-		//String country = getStringProperty("name");
+		
+		
+		//String country = CustomPolygonMarker.countryName();
 
 		// Simple Berlin button
-		noFill();
 		stroke(200);
 		strokeWeight(1);
 		rect(1000, 250, 350, 600);
-		//text("Country: " + " Estonia", 1010, 285);
+		text("Country: ", 1010, 285);
 		text("Population: " + " 1,131,796", 1010, 310);
 		text("Capital: " + " Tallinn", 1010, 335);
 		text("Did You Know: " + " Lorem Ipsum", 1010, 400);
