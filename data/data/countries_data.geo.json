@@ -6,6 +6,7 @@
       "name" : "Afghanistan",
 	  "population" : "33.93 Million",
 	  "capital" : "Kabul"
+	  "fact" : "The World's oldest oil paintings can be found in Afghanistan. Some are over 14 centuries old!"
     },
     "geometry" : {
       "type" : "Polygon",

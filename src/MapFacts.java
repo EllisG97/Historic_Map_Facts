@@ -36,6 +36,7 @@ public class MapFacts extends PApplet {
 
 	List<Marker> countryMarkers;
 	HashMap<String, DataEntry> dataEntriesMap;
+
 	
 	PFont font;
 
@@ -91,6 +92,8 @@ public class MapFacts extends PApplet {
 	}
 
 	public void draw() {
+		
+		//move box  
 		background(0);
 		map1.draw();
 		mapOverview.draw();
@@ -103,7 +106,7 @@ public class MapFacts extends PApplet {
 		ScreenPosition br1 = mapOverview.getScreenPosition(map1.getBottomRightBorder());
 		drawDetailSelectionBox(tl1, br1);
 
-		createFactBox(countries);
+		//createFactBox();
 		debugDisplay.draw();
 	}
 	
@@ -158,23 +161,14 @@ public class MapFacts extends PApplet {
 	}
 	
 	
-	public void createFactBox(List<Feature> countries) {
+	public void createFactBox() {
 
 		pushStyle();
+		fill(0);
 		rect(1000, 250, 350, 600, 28);
 		stroke(200);
 		strokeWeight(1);
-		popStyle();
-			
-		pushStyle();	
-		textFont(font);
-		textSize(20);
-		text("Country: ", 1010, 285);
-		text("Population: " + " 1,131,796", 1010, 310);
-		text("Capital: " + " Tallinn", 1010, 335);
-		text("Did You Know: " + " Lorem Ipsum", 1010, 400);
-		popStyle();
-
+		popStyle();		
 
 	}
 
