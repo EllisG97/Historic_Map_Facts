@@ -1893,6 +1893,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Zimbabwe"
+	  "population" : "14.86 Million",
+	  "capital" : "Harare",
+	  "fact" : " Zimbabwe holds the Guinness World Record for the most official languages, with 16 official languages!" 
     },
     "geometry" : {
       "type" : "Polygon",
