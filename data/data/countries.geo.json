@@ -1671,6 +1671,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Togo"
+	  "population" : "8.27 Million",
+	  "capital" : "Lomé",
+	  "fact" : "Togo means ‘house of sea’ in the Ewe language!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1680,7 +1683,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Thailand"
+      "name" : "Thailand",
+	  "population" : "69.8 Million",
+	  "capital" : "Bangkok",
+	  "fact" : "The Thai ceremonial name for Bangkok is the longest city name in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1690,7 +1696,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Tajikistan"
+      "name" : "Tajikistan",
+	  "population" : "9.53 Million",
+	  "capital" : "Dushanbe",
+	  "fact" : "The Tajikistani capital is named after the word for monday in the Tajik language, Dushanbe!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1701,6 +1710,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Turkmenistan"
+	  "population" : "6.03 Million",
+	  "capital" : "Ashgabat",
+	  "fact" : "Guinness Book of World Records has awarded Ashgabat the prize of having the highest density of marble buildings in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1710,7 +1722,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "East Timor"
+      "name" : "East Timor",
+	  "population" : "1.31 Million", 
+	  "capital" : "Dili",
+	  "fact" : "East Timor is home to the world’s most biodiverse waters!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1720,7 +1735,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Trinidad and Tobago"
+      "name" : "Trinidad and Tobago",
+	  "population" : "1.39 Million",
+	  "capital" : "Port of Spain",
+	  "fact" : "Trinidad and Tobago invented the only new acoustic instrument of the 20th century, the Steelpan!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1730,7 +1748,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Tunisia"
+      "name" : "Tunisia",
+	  "population" : "11.82 Million",
+	  "capital" : "Tunis",
+	  "fact" : "Over 8000 years ago, Southern Tunisia was covered with forests and savannah!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1740,7 +1761,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Turkey"
+      "name" : "Turkey",
+	  "population" : "84.34 Million",
+	  "capital" : "Ankara",
+	  "fact" : "The word Turquoise actually comes from the Turkish for 'Turkish Stone'!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1750,7 +1774,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Taiwan"
+      "name" : "Taiwan",
+	  "population" : "23.57 Million",
+	  "capital" : "Taipei City",
+	  "fact" : "The garbage trucks that operate throughout Taiwan play Fur Elise by Beethoven to let people know its garbage collection time!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1760,7 +1787,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "United Republic of Tanzania"
+      "name" : "United Republic of Tanzania",
+	  "population" : "59.73 Million",
+	  "capital" : "Dodoma",
+	  "fact" : "Nearly 30% of Tanzania is National Parks!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1771,6 +1801,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Uganda"
+	  "population" : "45.74 Million",
+	  "capital" : "Kampala",
+	  "fact" : "Around 11% of all bird species found globally can be found in Uganda!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1781,6 +1814,8 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Ukraine",
+	  "population" : "44.13 Million",
+	  "capital" : "Kyiv",
 	  "fact" : "Slava Ukraine"
     },
     "geometry" : {
@@ -1792,7 +1827,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Uruguay"
+      "name" : "Uruguay",
+	  "population" : "3.47 Million",
+	  "capital" : "Montevideo",
+	  "fact" : "The name 'Uruguay' means 'River of Painted Birds'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1802,7 +1840,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "United States of America"
+      "name" : "United States of America",
+	  "population" : "329.5 Million",
+	  "capital" : "Washington D.C.",
+	  "fact" : "The North American continent has been inhabited for over 15,000 years. Paleo-Indians migrated between 16,500 and 13,500 BCE!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1812,7 +1853,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Uzbekistan"
+      "name" : "Uzbekistan",
+	  "population" : "34.23 Million",
+	  "capital" : "Tashkent",
+	  "fact" : "Uzbekistan is home to the biggest and most regal metro system in Central Asia!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1822,7 +1866,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Venezuela"
+      "name" : "Venezuela",
+	  "population" : "28.44 Million",
+	  "capital" : "Caracas",
+	  "fact" : "The colours of the Venezuelan flag symbolise wealth, courage and independence!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1832,7 +1879,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Vietnam"
+      "name" : "Vietnam",
+	  "population" : "97.34 Million",
+	  "capital" : "Hanoi",
+	  "fact" : "Vietnam is home to water puppetry!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1842,7 +1892,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Vanuatu"
+      "name" : "Vanuatu",
+	  "population" : "307, 150",
+	  "capital" : "Port Vila",
+	  "fact" : "The islands of Vanuatu invented bungee jumping!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1852,7 +1905,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "West Bank"
+      "name" : "West Bank",
+	  "population" : "2.95 Million",
+	  "capital" : " East Jerusalem",
+	  "fact" : "It's name is due to its location on the west bank of the Jordan River"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1862,7 +1918,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Yemen"
+      "name" : "Yemen",
+	  "population" : "29.83 Million",
+	  "capital" : "Sana'a",
+	  "fact" : "Yemen is home to the worlds oldest skyscraper city, Shibam. It dates back to the 16th century!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1872,7 +1931,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "South Africa"
+      "name" : "South Africa",
+	  "population" : "59.31 Million",
+	  "capital" : "Cape Town, Pretoria & Bloemfontein"
+	  "fact" : "South Africa's national animal, the Springbox, is the only southern African gazelle!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1882,7 +1944,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Zambia"
+      "name" : "Zambia",
+	  "population" : "18.38 Million",
+	  "capital" : "Lusaka",
+	  "fact" : "Zambia is named after the fourth largest river in Africa, The Zambezi!"
     },
     "geometry" : {
       "type" : "Polygon",
