@@ -500,7 +500,7 @@
       "name" : "Northern Cyprus",
 	  "population" : "326,000",
 	  "capital" : "North Nicosia",
-	  "fact" : ""
+	  "fact" : "Nicosia is the only city in Europe that is split by a border!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -510,7 +510,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Cyprus"
+      "name" : "Cyprus",
+	  "population" : "1.20 Million",
+	  "capital" : "Nicosia",
+	  "fact" : "Legend has it that the Greek goddess Aphrodite was born in Cyprus!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -520,7 +523,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Czech Republic"
+      "name" : "Czech Republic",
+	  "population" : "10.7 Million",
+	  "capital" : "Prague",
+	  "fact" : "Czech Republic has the most castle in Europe, with over 2000 countries spread throughout the country!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -530,7 +536,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Germany"
+      "name" : "Germany",
+	  "population" : "83.24 Million",
+	  "capital" : "Berlin",
+	  "fact" : "The first ever recorded magazine was published in Germany in 1663!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -540,7 +549,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Djibouti"
+      "name" : "Djibouti",
+	  "population" : "988,002",
+	  "capital"  : "Djibouti",
+	  "fact" : "Lac Assal, a crater lake found in Djibouti, is the lowest point in Africa!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -550,7 +562,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Denmark"
+      "name" : "Denmark",
+	  "population" : "5.83 Million",
+	  "capital" : "Copenhagen",
+	  "fact" : "Dannebrog, the Danish flag, is the oldest state flag in the world - dating back to 1219!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -560,7 +575,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Dominican Republic"
+      "name" : "Dominican Republic",
+	  "population" : "10.85 Million",
+	  "capital" : "Santo Domingo",
+	  "fact" : "Santo Domingo’s Cathedral of Santa María la Menor is the oldest cathedral in the Americas - It was built way back in the 1500s!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -570,7 +588,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Algeria"
+      "name" : "Algeria",
+	  "population" : "43.85 Million",
+	  "capital" : "Algiers",
+	  "fact" : "The famous Djamaa El Djazair mosque is found in Algeria - it houses the worlds largest minaret!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -580,7 +601,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Ecuador"
+      "name" : "Ecuador",
+	  "population" : "17.64 Million",
+	  "capital" : "Quito",
+	  "fact" : "Quito, the capital city of Ecuador, is the highest official capital city in the entire world. It's over 2,850m above sea level!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -590,7 +614,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Egypt"
+      "name" : "Egypt",
+	  "population" : "102.3 Million",
+	  "capital" : "Cairo",
+	  "fact" : "Ancient Egyptians loved board games, with two of their favourites being Mehen and Senet!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -600,7 +627,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Eritrea"
+      "name" : "Eritrea",
+	  "population" : "6.08 Million",
+	  "capital" : "Asmara",
+	  "fact" : "Eritrea is named after the ancient name for the Red Sea, the Erythraean Sea!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -610,7 +640,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Spain"
+      "name" : "Spain",
+	  "population" : "47.35 Million",
+	  "capital" : "Madrid",
+	  "fact" : "The first ever recorded novel, Don Quixote, was written by the Spanish author Miguel de Cervantes in 1605!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -620,7 +653,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Estonia"
+      "name" : "Estonia",
+	  "population" : "1.33 Million",
+	  "capital" : "Tallinn",
+	  "fact" : "Oleviste, or St Olaf’s church, found in Tallinn was the highest building in the world from 1549 to 1625!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -630,7 +666,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Ethiopia"
+      "name" : "Ethiopia",
+	  "population" : "115 Million",
+	  "capital" : "Addis Ababa",
+	  "fact" : "Ethiopia is the only African country never to have been brought under colonial control!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -640,7 +679,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Finland"
+      "name" : "Finland",
+	  "population" : "5.53 Million",
+	  "capital" : "Helsinki",
+	  "fact" : "Finland was the first country in Europe to give all women the right to vote!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -650,7 +692,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Fiji"
+      "name" : "Fiji",
+	  "population" : "896,444",
+	  "capital" : "Suva",
+	  "fact" : "The largest Hindu temple in the Southern Hemisphere, Sri Siva Subramaniya Swami, can be found in Fiji!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -660,7 +705,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Falkland Islands"
+      "name" : "Falkland Islands",
+	  "population" : "2,840",
+	  "capital" : "Stanley",
+	  "fact"  : "The first recorded sighting of the Falkland Islands was by English sea captain John Davis in 1592!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -670,7 +718,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "France"
+      "name" : "France",
+	  "population" : "67.93 Million",
+	  "capital" : "Paris",
+	  "fact" : "Louis XIX had the shortest ever recorded reign in 1830 lasting a measly 20 minutes!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
