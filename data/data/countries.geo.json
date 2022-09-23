@@ -731,7 +731,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Gabon"
+      "name" : "Gabon",
+	  "population" : "2.22 Million",
+	  "capital" : "Libreville",
+	  "fact" : "Archaeological evidence suggests Gabon has been inhabited for over 400,000 years from the Palaeolithic to the present day Pygmy and Bantu peoples!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -741,7 +744,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "United Kingdom"
+      "name" : "United Kingdom",
+	  "population" : "67.22 Million",
+	  "capital" : "London",
+	  "fact" : "William the Conqueror ordered everyone to be in their beds by 8pm."
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -751,7 +757,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Georgia"
+      "name" : "Georgia",
+	  "population" : "3.71 Million",
+	  "capital" : "Tbilisi",
+	  "fact" : "Georgia is known for its tradition of polyphonic singing, a practice that was put on the Unesco Intangible Cultural Heritage of Humanity list in 2008!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -761,7 +770,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Ghana"
+      "name" : "Ghana",
+	  "population" : "31.07 Million",
+	  "capital" : "Accra",
+	  "fact" : "Ghana is home to the Largest Open Air Market in West Africa!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -771,7 +783,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Guinea"
+      "name" : "Guinea",
+	  "population" : "13.13 Million",
+	  "capital" : "Conakry",
+	  "fact" : "The Niger River, the Gambia River, and the Senegal River are among the 22 West African rivers that have their origins in Guinea!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -781,7 +796,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Gambia"
+      "name" : "Gambia",
+	  "population" : "2.41 Million",
+	  "capital" : "Banjui",
+	  "fact" : "The Gambia is home to nine different tribes with the largest being the Mandinka!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -791,7 +809,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Guinea Bissau"
+      "name" : "Guinea Bissau",
+	  "population" : "1.98 Million",
+	  "capital" : "Bissau",
+	  "fact" : "The Bissagos or Bijagos Islands that surround Guinea Bissau are run by a matriarchal society!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -801,7 +822,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Equatorial Guinea"
+      "name" : "Equatorial Guinea",
+	  "population" : "1.40 Million",
+	  "capital" : "Malabo",
+	  "fact" : "Equatorial Guinea is the smallest African country to be a member of the United Nations!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -811,7 +835,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Greece"
+      "name" : "Greece",
+	  "population" : "10.72 Million",
+	  "capital" : "Athens",
+	  "fact" : "Greece is home to more archaeological museums than any other country in the world"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -821,7 +848,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Greenland"
+      "name" : "Greenland",
+	  "population" : "56, 367",
+	  "capital" : "Nuuk",
+	  "fact" : "The name Greenland means 'Land of People'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -831,7 +861,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Guatemala"
+      "name" : "Guatemala",
+	  "population" : "16.86 Million",
+	  "capital" : "Guatemala City",
+	  "fact" : "Chocolate originates from Guatemala thanks to the Mayans obsession with the delicious bean!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -841,7 +874,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "French Guiana"
+      "name" : "French Guiana",
+	  "population" : "294,071",
+	  "capital" : "Cayenne",
+	  "fact" : "The Arawak Indians were the first tribe known to occupy French Guiana!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -851,7 +887,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Guyana"
+      "name" : "Guyana",
+	  "population" : "785,559",
+	  "capital" : "Georgetown",
+	  "fact" : "Conan Doyle’s 'The Lost World' Is Based On Guyana’s Landscapes"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -862,6 +901,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Honduras"
+	  "population" : "9.90 Million",
+	  "capital" : "Tegucigalpa",
+	  "fact" : "Copan, the site of an ancient Maya city, located in Honduras. It was one of the most densely populated areas of the Maya world between AD 426 to 820!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -871,7 +913,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Croatia"
+      "name" : "Croatia",
+	  "population" : "3.88 Million",
+	  "capital" : "Zagreb",
+	  "fact" : "The Pula Arena in Pula, Croatia is the only remaining Roman amphitheater in the world to maintain its four side towers!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -881,7 +926,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Haiti"
+      "name" : "Haiti",
+	  "population" : "11.4 Million",
+	  "capital" : "Port-au-Prince",
+	  "fact" : "Throughout Haiti you can find a vast array of surviving cave paintings from the Taino people!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -891,7 +939,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Hungary"
+      "name" : "Hungary",
+	  "population" : "9.75 Million",
+	  "capital" : "Budapest",
+	  "fact" : "Hungary’s oldest university is the University of Pecs and was founded in 1367!"
     },
     "geometry" : {
       "type" : "Polygon",
