@@ -952,7 +952,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Indonesia"
+      "name" : "Indonesia",
+	  "population" : "273.5 Million",
+	  "capital" : "Jakarta",
+	  "fact" : "Indonesia is home to the worlds largest flower the Rafflessia Arnoldia, or Corpse Lily!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -962,7 +965,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "India"
+      "name" : "India",
+	  "population" : "1.38 Billion",
+	  "capital" : "New Delhi",
+	  "fact" : "The town of Jaipur, located in India, is home to the largest sundial in the world - It's a whopping 90 feet tall!" 
     },
     "geometry" : {
       "type" : "Polygon",
@@ -972,7 +978,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Ireland"
+      "name" : "Ireland",
+	  "population" : "4.99 Million",
+	  "capital" : "Dublin",
+	  "fact" : "Ireland is the only country in the world to have a musical instrument as its national symbol - It's national symbol is a harp!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -982,7 +991,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Iran"
+      "name" : "Iran",
+	  "population" : "83.99 Million",
+	  "capital" : "Tehran",
+	  "fact" : "The weekend in Iran is Thursday and Friday as opposed to the more common Saturday and Sunday!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -992,7 +1004,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Iraq"
+      "name" : "Iraq",
+	  "population" : "40.22 Million",
+	  "capital" : "Baghdad",
+	  "fact" : "Iraq is home to the worlds oldest known form of writing script, Cuneiform!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1002,7 +1017,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Iceland"
+      "name" : "Iceland",
+	  "population" : "366,425",
+	  "capital" : "Reykjavik",
+	  "fact" : "Back in the Viking Age, Icelanders had a different month system based on weather and crops!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1012,7 +1030,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Palestine"
+      "name" : "Palestine",
+	  "population" : "4.80 Million",
+	  "capital" : "Jerusalem",
+	  "fact" : "Palestine is known for some of the most beautiful wildflowers in the world including Irises and Jonquils!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1022,7 +1043,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Italy"
+      "name" : "Italy",
+	  "population" : "59.55 Million",
+	  "capital" : "Rome",
+	  "fact" : "The first batteries were invented in Italy in 1800 by Alessandro Volta - hence the name 'volts'!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1032,7 +1056,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Jamaica"
+      "name" : "Jamaica",
+	  "population" : "2.96 Million",
+	  "capital" : "Kingston",
+	  "fact" : "Jamaica has the most churches per square mile in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1042,7 +1069,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Jordan"
+      "name" : "Jordan",
+	  "population" : "11.04 Million",
+	  "capital" : "Amman",
+	  "fact" : "There are over 100,000 archaeological sites in Jordan!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1052,7 +1082,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Japan"
+      "name" : "Japan",
+	  "population" : "125.8 Million",
+	  "capital" : "Tokyo",
+	  "fact" : "The first known Geisha in Japan were men!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1062,7 +1095,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Kazakhstan"
+      "name" : "Kazakhstan",
+	  "population" : "18.75 Million",
+	  "capital" : "Astana",
+	  "fact" : "The first record of horse domestication was in Kazakhstan!" 
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1072,7 +1108,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Kenya"
+      "name" : "Kenya",
+	  "population" : "53.7 Million",
+	  "capital" : "Nairobi",
+	  "fact" : "The first woman to win a Nobel Peace Prize, Wangari Muta Maathai, was from Kenya!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1082,7 +1121,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Kyrgyzstan"
+      "name" : "Kyrgyzstan",
+	  "population" : "6.59 Million",
+	  "capital" : "Bishkek",
+	  "fact" : "The ' Epic of Manas', a Kyrgyzstani poem, is the longest poem in the world - It is an impressive 500,000 lines line!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1092,7 +1134,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Cambodia"
+      "name" : "Cambodia",
+	  "population" : "16.72 Million",
+	  "capital" : "Phnom Penh",
+	  "fact" : "Cambodia is home to the largest religious monument in the world, Angkor Wat!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1102,7 +1147,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "South Korea"
+      "name" : "South Korea",
+	  "population" : "51.78 Million",
+	  "capital" : "Seoul",
+	  "fact" : "Rice cakes are often used as a good luck charm when taking exams in South Korea!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1112,7 +1160,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Kosovo"
+      "name" : "Kosovo",
+	  "population" : "1.87 Million",
+	  "capital" : "Pristina",
+	  "fact" : "Kosovo is currently (2022) the second youngest country in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1122,7 +1173,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Kuwait"
+      "name" : "Kuwait",
+	  "population" : "4.27 Million",
+	  "capital" : "Kuwait City",
+	  "fact" : "In 2001, archaeologists believe they discovered the remains of the world’s oldest ocean-going boat in Kuwait - it dates back to 5,000BC!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1132,7 +1186,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Laos"
+      "name" : "Laos",
+	  "population" : "7.27 Million",
+	  "capital" : "Vientiane",
+	  "fact" : "Laos is the only landlocked country in the whole of Southeast Asia!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1142,7 +1199,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Lebanon"
+      "name" : "Lebanon",
+	  "population" : "6.82 Million",
+	  "capital" : "Beirut",
+	  "fact" : "Lebanon is home to the oldest continuously inhabited city in the world - Byblos!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1152,7 +1212,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Liberia"
+      "name" : "Liberia",
+	  "population" : "5.05 Million",
+	  "capital" : "Monrovia",
+	  "fact" : "Liberia’s name comes from the Latin word “liber” meaning “free” as the country was created as a homeland for liberated African-American slaves!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1162,7 +1225,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Libya"
+      "name" : "Libya",
+	  "population" : "6.87 Million",
+	  "capital" : "Tripoli",
+	  "fact" : "Libya has only ever had one king in it's lifetime - King Idris I rule from 1951 to 1969!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1172,7 +1238,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Sri Lanka"
+      "name" : "Sri Lanka",
+	  "population" : "21.92 Million",
+	  "capital" : "Colombo",
+	  "fact" : "Cinnamon originated in Sri Lanka and was famously discovered by the Ancient Egyptians over 4000 years ago!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1182,7 +1251,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Lesotho"
+      "name" : "Lesotho",
+	  "population" : "2.14 Million",
+	  "capital" : "Maseru",
+	  "fact" : "Lesotho is the only country on Earth that exists entirely above 1000m above sea level - hence it's name the 'Kingdom in the Sky'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1192,7 +1264,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Lithuania"
+      "name" : "Lithuania",
+	  "population" : "2.79 Million",
+	  "capital" : "Vilnius",
+	  "fact" : "The Stelmuze oak, which is the oldest tree in Europe (it predates the crusades!), can be found in Lithuania!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1202,7 +1277,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Luxembourg"
+      "name" : "Luxembourg",
+	  "population" : "632,275",
+	  "capital" : "Luxembourg",
+	  "fact" : "Luxembourg is the only Grand Dutchy in the world, it became known as The Grand Dutchy of Luxembourg after Napoleons defeat in 1815!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1212,7 +1290,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Latvia"
+      "name" : "Latvia",
+	  "population" : "1.90 Million",
+	  "capital" : "Riga",
+	  "fact" : "The first  decorated Christmas tree on record was one in Riga back in 1510!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1762,7 +1843,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Chad"
+      "name" : "Chad",
+	  "population" : "16.43 Million",
+	  "capital" : "N'Djamena",
+	  "fact" : "Chad is sometimes known as “The Babel Tower of the World.“ due to the vast array of languages found in this diverse country!"
     },
     "geometry" : {
       "type" : "Polygon",
