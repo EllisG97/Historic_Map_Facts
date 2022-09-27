@@ -1303,7 +1303,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Morocco"
+      "name" : "Morocco",
+	  "population" : "38.48 Million",
+	  "capital" : "Rabat",
+	  "fact" : "The 9th Century city Fez is the oldest active Medieval city in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1313,7 +1316,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Moldova"
+      "name" : "Moldova",
+	  "population" : "2.61 Million",
+	  "capital" : "Chișinău",
+	  "fact" : "Moldova holds the Guinness World Record for the largest wine cellar in the world, it covers over 55km of ground!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1323,7 +1329,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Madagascar"
+      "name" : "Madagascar",
+	  "population" : "27.69 Million",
+	  "capital" : "Antananarivo",
+	  "fact" : "Madagascar is home to 70 species of lemurs that aren't found anywhere else in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1333,7 +1342,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Mexico"
+      "name" : "Mexico",
+	  "population" : "128.9 Million",
+	  "capital" : "Mexico City",
+	  "fact" : "Mexico is home to the worlds largest Pyramid - The pyramid of Cholula is over 66 meters tall!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1343,7 +1355,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Macedonia"
+      "name" : "North Macedonia",
+	  "population" : "1.83 Million",
+	  "capital" : "Skopje",
+	  "fact" : "North Macedonia is the only country that got independence from Yugoslavia without shedding a single drop of blood!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1353,7 +1368,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Mali"
+      "name" : "Mali",
+	  "population" : "20.25 Million",
+	  "capital" : "Bamako",
+	  "fact" : "The Grand Mosque of Djenne is the world’s largest manmade clay structure!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1363,7 +1381,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Myanmar"
+      "name" : "Myanmar",
+	  "population" : "54.41 Million",
+	  "capital" : "Naypyidaw",
+	  "fact" : "The Shwedagon Pagoda is made up of more than 60 tonnes of gold, and that's just the exterior!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1373,7 +1394,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Montenegro"
+      "name" : "Montenegro",
+	  "population" : "621,718",
+	  "capital" : "Podgorica",
+	  "fact" : "The oldest olive tree in the world, Stara Maslina, can be found in Montenegro’s southern town of Bar!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1383,7 +1407,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Mongolia"
+      "name" : "Mongolia",
+	  "population" : "3.27 Million",
+	  "capital" : "Ulaanbaatar",
+	  "fact" : "Genghis Khan, and ancient Mongolian ruler once ruled over 13,500,000km2 of the world - that's around 1/3rd of Asia!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1393,7 +1420,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Mozambique"
+      "name" : "Mozambique",
+	  "population" : "31.26 Million",
+	  "capital" : "Maputo",
+	  "fact" : "Lake Malawi is sometimes referred to as “the calendar lake” dues to its dimensions: 365 miles long and 52 miles wide!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1403,7 +1433,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Mauritania"
+      "name" : "Mauritania",
+	  "population" : "4.65 Million",
+	  "capital" : "Nouakchott",
+	  "fact" : "The modern capital of Mauritania, Nouakchott, likely derives from the Berber 'nawakshut' meaning 'place of the winds'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1413,7 +1446,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Malawi"
+      "name" : "Malawi",
+	  "population" : "19.13 Million",
+	  "capital" : "Lilongwe",
+	  "fact" : "Lake Malawi accounts for more than one-fifth of the country’s total area!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1423,7 +1459,11 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Malaysia"
+      "name" : "Malaysia",
+	  "population" : "32.73 Million",
+	  "capital" : "Kuala Lumpur",
+	  "fact" : " One of the old names of Malaysia, Aurea Chersonesus, means 'peninsula of gold'!"
+	  
     },
     "geometry" : {
       "type" : "MultiPolygon",
