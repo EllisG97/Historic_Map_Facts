@@ -1474,6 +1474,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Namibia"
+	  "population" : "2.54 Million",
+	  "capital" : "Windhoek",
+	  "fact" : "Namibia is home to the world’s oldest desert the Namib Desert!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1483,7 +1486,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "New Caledonia"
+      "name" : "New Caledonia",
+	  "population" : "271,960",
+	  "capital" : "Nouméa",
+	  "fact" : "New Caledonia is so named because the mountainous scenery of the Main Island reminded him of his native Scotland (which the romans called Caledonia!)"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1493,7 +1499,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Niger"
+      "name" : "Niger",
+	  "population" : "24.21 Million",
+	  "capital" : "Niamey",
+	  "fact" : "Nearly four-fifths of Niger is desert, making it one of the hottest countries in the world!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1503,7 +1512,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Nigeria"
+      "name" : "Nigeria",
+	  "population" : "206.1 Million",
+	  "capital" : "Abuja",
+	  "fact" : "Kofar Mata Dye Pit in Kano was established in 1498 and is Africa's oldest existing dye pit!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1513,7 +1525,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Nicaragua"
+      "name" : "Nicaragua",
+	  "population" : "6.62 Million",
+	  "capital" : "Managua",
+	  "fact" : "Nicaraguan currency, the Corboda, is named after the Spanish conquistador Francisco Hernandez de Cordoba!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1523,7 +1538,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Netherlands"
+      "name" : "Netherlands",
+	  "population" : "17.44 Million",
+	  "capital" : "Amsterdam",
+	  "fact" : "There are over 1,000 windmills dotted throughout the Netherlands!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1533,7 +1551,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Norway"
+      "name" : "Norway",
+	  "population" : "5.37 Million",
+	  "capital" : "Oslo",
+	  "fact" : "The Sami people, Norways indigenous people, have lived in Norway for over 10,000 years!" 
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1543,7 +1564,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Nepal"
+      "name" : "Nepal",
+	  "population" : "29.14 Million",
+	  "capital" : "Kathmandu",
+	  "fact" : "Nepal is the natural habitat to 5,980 species of flowering plants, which is why it is often dubbed the 'Amazon of Asia'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1553,7 +1577,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "New Zealand"
+      "name" : "New Zealand",
+	  "population" : "5.08 Million",
+	  "capital" : "Wellington",
+	  "fact" : "New Zealand was the first country to give women the vote in 1893!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
