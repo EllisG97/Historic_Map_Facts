@@ -11,5 +11,5 @@ TO DO:
 
 -Add background to text so it's not directly displaying on a map (eye-sore)  
 -Fix Countries with multiple landmasses not displaying necessary information  
--Add data to remaining countries via .JSON  (M to S Remaining)  
+-Add data to remaining countries via .JSON  (O to S Remaining)  
 -Fix top-right map selection box dimensions (Current selection box is too big for the smaller map display)  
