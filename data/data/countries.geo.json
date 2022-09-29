@@ -900,7 +900,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Honduras"
+      "name" : "Honduras",
 	  "population" : "9.90 Million",
 	  "capital" : "Tegucigalpa",
 	  "fact" : "Copan, the site of an ancient Maya city, located in Honduras. It was one of the most densely populated areas of the Maya world between AD 426 to 820!"
@@ -1473,7 +1473,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Namibia"
+      "name" : "Namibia",
 	  "population" : "2.54 Million",
 	  "capital" : "Windhoek",
 	  "fact" : "Namibia is home to the world’s oldest desert the Namib Desert!"
@@ -1923,7 +1923,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Togo"
+      "name" : "Togo",
 	  "population" : "8.27 Million",
 	  "capital" : "Lomé",
 	  "fact" : "Togo means ‘house of sea’ in the Ewe language!"
@@ -1962,7 +1962,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Turkmenistan"
+      "name" : "Turkmenistan",
 	  "population" : "6.03 Million",
 	  "capital" : "Ashgabat",
 	  "fact" : "Guinness Book of World Records has awarded Ashgabat the prize of having the highest density of marble buildings in the world!"
@@ -2053,7 +2053,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Uganda"
+      "name" : "Uganda",
 	  "population" : "45.74 Million",
 	  "capital" : "Kampala",
 	  "fact" : "Around 11% of all bird species found globally can be found in Uganda!"
@@ -2186,7 +2186,7 @@
     "properties" : {
       "name" : "South Africa",
 	  "population" : "59.31 Million",
-	  "capital" : "Cape Town, Pretoria & Bloemfontein"
+	  "capital" : "Cape Town, Pretoria & Bloemfontein",
 	  "fact" : "South Africa's national animal, the Springbox, is the only southern African gazelle!"
     },
     "geometry" : {
@@ -2210,7 +2210,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Zimbabwe"
+      "name" : "Zimbabwe",
 	  "population" : "14.86 Million",
 	  "capital" : "Harare",
 	  "fact" : " Zimbabwe holds the Guinness World Record for the most official languages, with 16 official languages!" 
