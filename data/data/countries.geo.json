@@ -1590,7 +1590,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Oman"
+      "name" : "Oman",
+	  "population" : "5.10 Million",
+	  "capital" : "Muscat"
+	  "fact" : "Oman is the oldest independent state in the Arab world!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1600,7 +1603,7 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Pakistan"
+      "name" : "Pakistan",
     },
     "geometry" : {
       "type" : "Polygon",
