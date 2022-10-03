@@ -1604,6 +1604,9 @@
     "type" : "Feature",
     "properties" : {
       "name" : "Pakistan",
+	  "population" : "220.9 Million",
+	  "capital" : "Islamabad",
+	  "fact" : "The name Pakistan means ‘land of the pure’ in Persian and Urdu!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1613,7 +1616,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Panama"
+      "name" : "Panama",
+	  "population" : "4.31 Million",
+	  "capital" : "Panama City",
+	  "fact" : "Panama City is the only capital city in the world that has a rainforest within the city limits!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1623,7 +1629,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Peru"
+      "name" : "Peru",
+	  "population" : "	32.97 Million",
+	  "capital" : "Lima",
+	  "fact" : "The Incan Empire was larger than imperial Rome at its peak. It included 24,855 miles of roads!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1633,7 +1642,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Philippines"
+      "name" : "Philippines",
+	  "population" : "110 Million",
+	  "capital" : "Manila",
+	  "fact" : "The largest pearl in the world was found in Palawan, Philippines - It weighed around 6kg!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1643,7 +1655,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Papua New Guinea"
+      "name" : "Papua New Guinea",
+	  "population" : "8.94 Million",
+	  "capital" : "Port Moresby",
+	  "fact" : "Papuans were plausibly the world’s first agriculturalists with evidence of gardening from up to 9000 years ago!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1653,7 +1668,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Poland"
+      "name" : "Poland",
+	  "population" : "37.95 Million",
+	  "capital" : "Warsaw",
+	  "fact" : "Poland is named after an ancient Slavic Tribe - The Polanie - which means 'people living in open fields'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1663,7 +1681,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Puerto Rico"
+      "name" : "Puerto Rico",
+	  "population" : "3.19 Million",
+	  "capital" : "San Juan",
+	  "fact" : "Puerto Rico has the brightest bioluminescent bay in the World!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1673,7 +1694,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "North Korea"
+      "name" : "North Korea",
+	  "population" : "25.78 Million",
+	  "capital" : "Pyongyang",
+	  "fact" : "North Korea is the only Necrocracy in the world as it is ruled by a dead man - the Eternal Leader Kim Il-Sung!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1683,7 +1707,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Portugal"
+      "name" : "Portugal",
+	  "population" : "10.31 Million",
+	  "capital" : "Lisbon",
+	  "fact" : "The oldest operating bookstore in the world is located in Lisbon!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1693,7 +1720,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Paraguay"
+      "name" : "Paraguay",
+	  "population" : "7.13 Million",
+	  "capital" : "Asunción",
+	  "fact" : "In Paraguay, duels are still legal but you’ll need to be a registered blood donor to take part!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1703,7 +1733,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Qatar"
+      "name" : "Qatar",
+	  "population" : "2.88 Million",
+	  "capital" : "Doha",
+	  "fact" : "The inhabitants of Al Khor Island were the first to produce purple shellfish dye!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1713,7 +1746,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Romania"
+      "name" : "Romania",
+	  "population" : "19.29 Million",
+	  "capital" : "Bucharest",
+	  "fact" : "The tallest wooden church in the world is found in Romania, it is a whopping 257 feet tall!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1723,7 +1759,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Russia"
+      "name" : "Russia",
+	  "population" : "144.1 Million",
+	  "capital" : "Moscow",
+	  "fact" : "A clock in St Petersburg marks the exact moment that Russia became communist!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1733,7 +1772,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Rwanda"
+      "name" : "Rwanda",
+	  "population" : "12.95 Million",
+	  "capital" : "Kigali",
+	  "fact" : " Rwanda is known as Le Pays des Mille Collines (Land of a Thousand Hills) because of its many mountains!"
     },
     "geometry" : {
       "type" : "Polygon",
