@@ -1785,7 +1785,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Western Sahara"
+      "name" : "Western Sahara",
+	  "population" : "565,581",
+	  "capital" : "Laayoune ",
+	  "fact" : "The desert landscape surrounding Laayoune has been used as a backdrop in movies such as 'The Mummy' and 'Prince of Persia'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1795,7 +1798,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Saudi Arabia"
+      "name" : "Saudi Arabia",
+	  "population" : "34.81 Million",
+	  "capital" : "Riyadh",
+	  "fact" : "Contrary to popular belief, Saudi Arabia is in fact home to the worlds largest sandy desert the 'Rub-Al Khali'!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1805,7 +1811,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Sudan"
+      "name" : "Sudan",
+	  "population" : "43.85 Million",
+	  "capital" : "Khartoum",
+	  "fact": "Sudan is home to more pyramids than Egypt, with over 200 pyramids spread throughout the country!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1815,7 +1824,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "South Sudan"
+      "name" : "South Sudan",
+	  "population" : "11.19 Million",
+	  "capital" : "Juba",
+	  "fact" : "Boma National Park in South Sudan, is home to one of the world’s great wildlife migrations where an estimated 1.3 million antelope move across the landscape!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1825,7 +1837,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Senegal"
+      "name" : "Senegal",
+	  "population" : "16.74 Million",
+	  "capital" : "Dakar",
+	  "fact" : "There is an annual pilgrimage, known as the Hajj of Senegal, where over 1 million West Africans travel to Mecca!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1835,7 +1850,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Solomon Islands"
+      "name" : "Solomon Islands",
+	  "population" : "686,878",
+	  "capital" : "Honiara",
+	  "fact" : "Due to the belief the the islands were abundant in gold, they were named after the legendary King Solomons mines!"
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -1845,7 +1863,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Sierra Leone"
+      "name" : "Sierra Leone",
+	  "population" : "7.97 Million",
+	  "capital" : "Freetown",
+	  "fact" : "Sierra Leone’s capital city, Freetown, was founded as a home for repatriated and rescued former slaves in 1787!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1855,7 +1876,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "El Salvador"
+      "name" : "El Salvador",
+	  "population" : "6.48 Million",
+	  "capital" : "San Salvador",
+	  "fact" : "El Salvador’s nickname is the Land of Volcanos, there is even a volcano on its flag!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1865,7 +1889,11 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Somaliland"
+      "name" : "Somaliland",
+	  "population" : "3.50 Million",
+	  "capital" : "Hargeisa",
+	  "fact" : "Somaliland became an independent country in 1991, but is still yet to be internationally recognised as seperate from Somalia!"
+	  
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1875,7 +1903,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Somalia"
+      "name" : "Somalia",
+	  "population" : "15.89 Million",
+	  "capital" : "Mogadishu",
+	  "fact" : "England’s first female Muslim football referee, Jawahir Roble, is from Somalia!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1885,7 +1916,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Republic of Serbia"
+      "name" : "Republic of Serbia",
+	  "population" : "6.90 Million",
+	  "capital" : "Belgrade",
+	  "fact" : "Serbia is the site of the clock invention, around 200 years before anywhere else!"
     },
     "geometry" : {
       "type" : "Polygon",
