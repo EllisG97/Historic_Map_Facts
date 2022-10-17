@@ -1929,7 +1929,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Suriname"
+      "name" : "Suriname",
+	  "population" : "586,634",
+	  "capital" : "Paramaribo",
+	  "fact" : "The name 'Suriname' derives from the Native Surinen people!"
     },
     "geometry" : {
       "type" : "Polygon",
