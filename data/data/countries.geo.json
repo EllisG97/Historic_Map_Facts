@@ -32,7 +32,7 @@
       "name" : "Albania",
 	  "population" : "2.83 Million",
 	  "capital" : "Tirana",
-	  "fact" : "Is a fact"
+	  "fact" : "During its Communist era, 1941 to 1992, Albania became the first country to ban all religion!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -45,7 +45,7 @@
       "name" : "United Arab Emirates",
 	  "population" : "9.89 Million",
 	  "capital" : "Abu Dhabi",
-	  "fact" : "insert fact here"
+	  "fact" : "The UAE created the world's first government ministry for artificial intelligence!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1981,7 +1981,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Swaziland"
+      "name" : "Eswatini",
+	  "population" : "1.16 Million",
+	  "capital" : "Mbabane",
+	  "fact" : "Red feathers of the lourie bird can only be worn by members of the Eswatini royal family!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1991,7 +1994,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Syria"
+      "name" : "Syria",
+	  "population" : "17.5 Million",
+	  "capital" : "Damascus",
+	  "fact" : "Damascus, the capital of Syria, is the oldest existing capital in the world!"	
     },
     "geometry" : {
       "type" : "Polygon",
