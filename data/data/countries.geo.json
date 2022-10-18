@@ -1942,7 +1942,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Slovakia"
+      "name" : "Slovakia",
+	  "population" : "5.45 Million",
+	  "capital" : "Bratislava",
+	  "fact" : "Slovakia is home to the worlds tallest cave column, it is found within the Krasnohorska Cave and measures a whopping 34 meters high!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1952,7 +1955,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Slovenia"
+      "name" : "Slovenia",
+	  "population" : "2.1 Million",
+	  "capital" : "Ljubljana",
+	  "fact" : "The oldest wheel ever discovered was found in Slovenia, it is estimated to be over 5000 years old!"
     },
     "geometry" : {
       "type" : "Polygon",
@@ -1962,7 +1968,10 @@
   }, {
     "type" : "Feature",
     "properties" : {
-      "name" : "Sweden"
+      "name" : "Sweden",
+	  "population" : "10.35 Million",
+	  "capital" : "Stockholm",
+	  "fact" : "One of the Swedish Kings, Erik XIII, became a pirate after being forced from the crown in 1439!"
     },
     "geometry" : {
       "type" : "Polygon",
